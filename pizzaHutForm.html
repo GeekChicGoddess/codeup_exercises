@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/pizzaHutStyle.css">
+</head>
+<body>
+    <header>
+        <div id="headerCenter">
+            <nav id="account">
+                <ul>
+                    <li class="upperNav borderRight">Sign in</li>
+                    <li class="upperNav">Create An Account</li>
+                    <li class="upperNav borderRight" id="find">Find a Pizza Hut</li>
+                    <li class="upperNav">Español</li>
+                </ul>
+            </nav>
+            <div id="cart">$0.00</div>
+            <img src="img/pizza-hut-make-it-great-logo-small.png" alt="pizza hut logo" id="smallLogo">
+
+            <nav id="mainNav">
+                <ul>
+                    <li class="black">Pizza</li>
+                    <li class="black">Wings</li>
+                    <li class="black">Sides</li>
+                    <li class="black">Drinks</li>
+                    <li class="black">More</li>
+                    <li class="black" id="deals">Deals</li>
+                    <li class="red">Popular Pizzas</li>
+                    <li class="red">Reorder</li>
+                    <li class="red">Start New Order</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <h1>CREATE YOUR PIZZA HUT ACCOUNT</h1>
+        <form method="POST">
+            <div id="left">
+                <label>
+                    Full Name
+                </label>
+                <div>
+                    <input type="text" class="form-control" placeholder="First Name" name="firstName" id="fistName">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastName" id="lastName" >
+                </div>
+                <label for="email" id="emailLabel">
+                E-Mail Address
+                </label>
+                <input type="email" name="email" placeholder="you@example.com" class="form-control" id="email">
+                <label>
+                    Phone Number
+                </label>
+                <input type="tel" placeholder="(XXX) XXX-XXXX" class="form-control" name="phone" id="phone">
+                <input type="text" placeholder="ext" class="form-control" name="ext" id="ext">
+                <label for="password">
+                   Password
+                </label>
+                <input type="password" placeholder="Password" class="form-control" id="password" name="password">
+                <input type="password" placeholder="Confirm Password" class="form-control" name="confirmPassword">
+            </div>
+            <div id="right">
+                <h2>SIGN UP TO GET GREAT DEALS</h2>
+                <div #signupDiv>
+                    <label class="signUpLabel">
+                        <input type="radio" checked class="signUp" name="signUp">
+                    YES! Sign me up for email offers!
+                    </label>
+                    <label class="signUpLabel">
+                        <input type="radio" class="signUp" name="signUp">
+                    Email and Text
+                    </label>
+                    <label class="signUpLabel">
+                        <input type="radio" class="signUp"name="signUp">
+                    No Thanks
+                    </label>
+
+                </div>
+                <div>
+                    <label>Birthday</label>
+                    <select id="birthMonth" name="birthMonth" class="birthday">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                    </select>
+                    <select id="birthDay" name="birthDay" class="birthday">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </div>
+                <label for="zip">Zipcode</label>
+                <input type="number" placeholder="zip" class="form-control" id="zip" name="zip">
+                <button class="form-control" id="submit">CREATE YOUR ACCOUNT</button>
+            </div>
+            <label class="consent">
+                <input class="consent" type="checkbox">
+            I consent to receive coupons and promotions news from Pizza Hut, its franchisees and affiliates, and understand and agree that my information will be used as described here and in Pizza Hut's Privacy Policy and Terms of Service. I also certify that I am age 13 or older. </label>
+        </form>
+    </div>
+    <footer>
+        <div id="footerWrap">
+            <div id="leftFooter">
+                <ul id="menu">
+                    <li class="listTitle">MENU</li>
+                    <li>Pizza</li>
+                    <li>Pasta</li>
+                    <li>Wings</li>
+                    <li>Sides</li>
+                    <li>Drinks</li>
+                    <li>Desserts</li>
+                    <li>Deals</li>
+                    <li>Dipping Sauce</li>
+                </ul>
+                <ul>
+                    <li class="listTitle">ABOUT US</li>
+                    <li>Our Story</li>
+                    <li>Hut Life BLog</li>
+                    <li>Careers</li>
+                    <li>Catering</li>
+                    <li>International</li>
+                    <li>Become a Franchisee</li>
+                    <li>Corporate Contibution<br>Guidlines</li>
+                    <li>Supplier Code</li>
+                    <li>Diversity</li>
+                    <li>School Lunch</li>
+                </ul>
+                    <ul>
+                    <li class="listTitle">CUSTOMER SERVICE</li>
+                    <li>Contact Us</li>
+                    <li>Find a Pizza Hut</li>
+                    <li>FAQs</li>
+                    <li>Gift Cards</li>
+                    <li>Español</li>
+                    </ul>
+                <ul>
+                    <li class="listTitle">POLICIES</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Use</li>
+                    <li>Tracking Tags</li>
+                </ul>
+
+                <ul>
+                    <li class="listTitle">MY ACCOUNT</li>
+                    <li>Create an account</li>
+                    <li>Sign in</li>
+                </ul>
+                    <ul>
+                    <li class="listTitle">OUR FOOD</li>
+                    <li>Restaruant Quality Food</li>
+                    <li>Nutrition</li>
+                    <li>Gluten Free</li>
+                    </ul>
+            </div>
+
+            <div id="rightFooter">
+                <ul>
+                    <li class="listTitle">CONNECT WITH <br>PIZZA HUT</li>
+                    <li><img src="img/default_icon.png"><br>Hut Lovers</li>
+                    <li><img src="img/facebook_icon.png"><br>Facebook</li>
+                    <li><img src="img/twitter_icon.png"><br>Twitter</li>
+                    <li><img src="img/youtube_icon.png"><br>YouTube</li>
+                    <li><img src="img/default_icon.png"><br>Mobile App</li>
+                    <li><img src="img/default_icon.png"><br>Book It!</li>
+                    <li><img src="img/default_icon.png"><br>Restaurant Quality <br>Food</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="bottomFooter">
+            <p>
+                THE DELIVERY CHARGE IS NOT A DRIVER TIP. Offers available for a limited time. You must ask/click for certain offers. Additional charge for extra cheese, Stuffed Crust, and extra toppings may apply. Product availability, combinability of discounts and specials, prices, participation, delivery areas and charges, and minimum purchase required for delivery may vary. Discounts are not applicable to tax, delivery charge, driver tip. Availability of WingStreet® products and flavors varies by Pizza Hut® location.
+                <br>
+                <br>
+                ® 2017 Pizza Hut, Inc. All rights reserved. The Pizza Hut name, logos and related marks are trademarks of Pizza Hut, Inc.
+                <br>
+                <br>
+                The HERSHEY'S® and SPECIAL DARK® trademarks and trade dress are used under license from The Hershey Company. PEPSI, PEPSI-COLA, PEPSI MAX and the Pepsi Globe are registered trademarks of PepsiCo, Inc.
+                <br>
+                <br>
+                The App Store, iPad, and iPhone marks are trademarks of Apple, Inc. Twitter is a trademark of Twitter, Inc. Google and Android are trademarks of Google, Inc. Windows Phone is a registered trademark of Microsoft, Inc.
+                <br>
+                <br>
+                All other trademarks are the property of their respective owners.
+                <br>
+                <br>
+                Portions © QuikOrder, Inc. 1997-2017 Patents 5,991,739; 6,801,228; Other Patents Pending Portions © IPDEV, Co. 1986-2017 Used with Permission</p>
+        </div>
+    </footer>
+</body>
+</html>
