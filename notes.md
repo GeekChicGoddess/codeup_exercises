@@ -157,3 +157,19 @@ They represent state on an element. For instance the states of a link (abchor ta
     * Total width = width + padding + border
     * total height = height + padding + border
 * Margin
+
+
+# Responsive Design
+
+img, embed, odject, video { max-width: 100%;}
+
+nav a, button { min-width: 48px; min-height: 48px;} (this makes it large enough to click with fingers)
+
+<meta name = "viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="styleseet" media="screen and (min-width: 480px)" href="css/over-480.css">
+<link rel="styleseet" media="screen and (max-width: 480px)" href="css/less-than-480.css">
+
+@media screen and (max-width: 480px)
+    body{}
+or... @media (max-width: 480px)
