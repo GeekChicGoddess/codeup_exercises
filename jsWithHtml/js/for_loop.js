@@ -5,7 +5,7 @@ var randomNumber = Math.floor(Math.random() * 10) + 1;
 
 for (var i = 1; i<=10; i++){
     var multAnswer = randomNumber * i;
-    console.log(randomNumber + " " + "*" + " " + i + " " + "=" + " " + multAnswer);
+    console.log(randomNumber + " " + "x" + " " + i + " " + "=" + " " + multAnswer);
 }
 
 for (var i = 1; i<=10; i++) {
