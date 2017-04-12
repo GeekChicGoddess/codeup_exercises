@@ -1,7 +1,10 @@
 /**
- * Created by melodytempleton on 4/11/17.
+ * Created by melodytempleton on 4/12/17.
  */
+
 "use strict";
+(function () {
+
 
 var myNameIs = 'Melody'; // TODO: Fill in your name here.
 
@@ -131,3 +134,5 @@ function returnPrettyDate (date){
 }
 
 console.log(returnPrettyDate("12/25/15"));
+
+})();
