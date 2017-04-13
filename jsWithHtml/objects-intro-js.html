@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/objects.js"></script>
+<script>
+    "use strict";
+
+    // todo:
+    // Create an array of objects that represent books.
+    // Each book should have a title and an author property.
+    // The author property should be an object with a firstName and lastName.
+    // Be creative and add at least 5 books to the array 4.
+     var books = [
+         {
+         title: "JavaScript for Kids: A Playful Introduction to Programming",
+         author: {
+            firstname: "Nick",
+            lastname: "Morgan"
+         }},
+         {
+             title: "Eloquent JavaScript: A Modern Introduction to Programming",
+             author: {
+                 firstname: "Marijn",
+                 lastname: "Haverbeke"
+             }},
+         {
+             title: "JavaScript: The Good Parts",
+             author: {
+                 firstname: "Douglas",
+                 lastname: "Crockford"
+             }},
+         {
+             title: "Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries",
+             author: {
+                 firstname: "Eric",
+                 lastname: "Elliott"
+             }},
+         {
+             title: "Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript",
+             author: {
+                 firstname: "David",
+                 lastname: "Herman"
+             }},
+     ];
+
+    // log out the books array
+    console.log(books);
+
+    //
+    // Loop through the array of books using .forEach and print out the specified information about each one.
+    // start loop here
+    books.forEach(function(element, index, array) {
+        var indexnum = parseInt(index);
+        console.log("Book #" +(indexnum+1));
+        console.log("Title: " + array[index].title);
+        console.log("Author: " + array[index].author.firstname + " " + array[index].author.lastname);
+        console.log("---");
+    });
+    // end loop here
+</script>
+</body>
+</html>
