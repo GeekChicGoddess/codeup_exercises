@@ -72,5 +72,63 @@
         console.log (finalStatement);
     });
 
+    var pet = {
+        name: "Jasmine",
+        species: "dog",
+        age: 4,
+        gender: "female",
+        clean: true,
+        hungry: false,
+        sleepy: false,
+        happy: false,
+        petFood: 10,
+        soap: 3
+    };
+    // 1) callPet() - call’s out pet name
+    // 2) playWithPet() - makes pet happy and hungry and dirty
+    // 3) feedPet(petFood) - makes pet not hungry and sleepy and reduces petFood by 1
+    // 4) makePetSleep() - makes pet not sleepy, not happy, and hungry, and 1 older
+    // 5) cleanPet(soap) - makes pet not happy and clean and reduces soap by 1
+
+    function callPet(){
+        console.log("Here " + pet.name);
+    }
+    function playWithPet(){
+        pet.happy = true;
+        pet.hungry = true;
+        pet.clean = false;
+        console.log("play with pet");
+        console.log(pet);
+    }
+
+    function feedPet(foodServings) {
+        pet.hungry = false;
+        pet.sleepy = true;
+        pet.petFood = pet.petFood - foodServings;
+        console.log("feed pet");
+        console.log(pet);
+    }
+    function makePetSleep() {
+        pet.sleepy = false;
+        pet.happy = false;
+        pet.hungry = true;
+        pet.age += 1;
+        console.log("make pet sleep");
+        console.log(pet);
+    }
+
+    function cleanPet(soapAmount){
+        pet.happy = false;
+        pet.clean = true;
+        pet.soap -= soapAmount;
+        console.log("clean pet")
+        console.log(pet);
+    }
+
+    console.log(pet);
+    callPet();
+    playWithPet();
+    feedPet(2);
+
 
 })();

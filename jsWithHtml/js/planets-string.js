@@ -108,10 +108,8 @@ twentyFourToTwelve("00:00");
 
 
 var suits = ["Ace of Hearts", "Ace of Diamonds", "Ace of Spades", "Ace of Clubs"];
-// declare and initialize array
 var suitsOrderList = "";
-suits.forEach(function (element, index, array) {
-    // element is the suit name..index is the iterator..array is the suits array itself
+suits.forEach(function (element, index, array) {  // element is the suit name..index is the iterator
      suitsOrderList += 'The card at ' + index + ' is: ' + element + ".\n";
 // creating a list that tells us the order of the cards in the array
 });
@@ -126,18 +124,15 @@ for (var i = 0; i < 4; i++){
     newSuitsOrder.push(suits[randomCardOrderer]); // push the random card onto new array
     suits.splice(randomCardOrderer, 1); // remove that card from the orginal suit array
     numberIndicesLeft -= i; // how many items left in suits?
-}
+     }
 var spade = newSuitsOrder.indexOf("Ace of Spades"); // where is the Ace of Spades?
 var guess = prompt("Which index do you think the Ace of Spades is at?");
 if (spade == guess) { // is your guess right?
-    alert("Yes! win!");
-}
+    alert("Yes! win!");}
 else{ // guess not
-    alert("Sorry. You lose");
-};
+    alert("Sorry. You lose");};
 alert("Here is the new order of my array..." + newSuitsOrderList);
 newSuitsOrder.forEach(function (element, index, array) { // loop through and list them all
     newSuitsOrderList += 'The card at ' + index + ' is: ' + element + ".\n";
-// element is the suit name..index is the iterator.
 });
 alert(newSuitsOrderList); // Here is the new order .....honest
